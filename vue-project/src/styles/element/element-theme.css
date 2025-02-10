@@ -1,0 +1,106 @@
+:root {
+    --el-color-primary: #0fa4b3;
+    --el-color-primary-light-3: #51bec9;
+    --el-color-primary-light-5: #7fcdd5;
+    --el-color-primary-light-7: #addce1;
+    --el-color-primary-light-8: #d9ecff;
+    --el-color-primary-light-9: #dbeef0;
+    --el-color-primary-dark-2: #0c838f;
+    background-color: #f6f6f8;
+}
+
+/* 如果需要暗色主题 */
+html.dark {
+    --el-color-primary: #409EFF;
+}
+
+/* 全局自定义样式 */
+
+.el-menu-item:not(.is-disabled):hover {
+    color: var(--el-color-primary) !important;
+}
+.el-menu-item:hover {
+    background-color: transparent !important;
+}
+
+.el-menu {
+    border-bottom: none !important;
+}
+
+.el-menu-item {
+    padding: 0 10px !important;
+}
+
+/* 移除 el-menu-item 点击后的背景色和下方横条 */
+.el-menu-item.is-active {
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+.el-menu__item:hover {
+  background-color: transparent !important;
+}
+
+.el-menu--horizontal > .el-menu-item.is-active {
+  border-bottom: none !important;
+}
+
+/* 禁用菜单项的过渡动画 */
+.el-menu--horizontal > .el-menu-item {
+  transition: none !important;
+}
+
+.el-menu--horizontal::after {
+  display: none !important;
+}
+
+/* 搜索框样式 */
+.el-input__wrapper {
+  border-radius: 0 !important;
+  box-shadow: 0 0 0 1px #dcdfe6 !important;
+  border: var(--el-color-primary);
+}
+
+/* 调整 el-select 下拉框的样式 */
+.el-select-dropdown {
+    border-radius: 0 !important;
+}
+
+.el-select__wrapper {
+    height: 46px !important;
+    border-radius: 0 !important;
+}
+
+.el-select-dropdown__item {
+    height: 46px !important;
+    line-height: 46px !important;
+}
+
+.el-select-dropdown__list {
+    padding: 0 !important;
+}
+
+.el-select-dropdown__wrap {
+    margin-bottom: 0 !important;
+}
+
+/* 调整选择框本身的样式 */
+.el-select .el-input {
+    height: 46px !important;
+}
+
+.el-select .el-input__inner {
+    height: 46px !important;
+    line-height: 46px !important;
+}
+
+.el-select .el-input__suffix {
+    height: 46px !important;
+    line-height: 46px !important;
+}
+
+.el-select .el-input__wrapper {
+    height: 46px !important;
+    line-height: 46px !important;
+    padding: 0 8px !important;
+}
