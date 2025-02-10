@@ -3,9 +3,10 @@ import App from './App.vue'
 import router from './router'  // 添加路由导入
 import './assets/iconfont/iconfont.css'  // 添加图标字体
 
-// 导入 Element Plus 样式
+// 先导入自定义主题
+import './styles/element/element-theme.css'
+// 再导入 Element Plus 样式
 import 'element-plus/dist/index.css'
-import './styles/element/element-theme.css'  // 自定义主题必须在 element-plus 样式之后导入
 
 // Element Plus 组件按需引入
 import {

@@ -1,11 +1,25 @@
 :root {
-    --el-color-primary: #0fa4b3;
-    --el-color-primary-light-3: #51bec9;
-    --el-color-primary-light-5: #7fcdd5;
-    --el-color-primary-light-7: #addce1;
-    --el-color-primary-light-8: #d9ecff;
-    --el-color-primary-light-9: #dbeef0;
-    --el-color-primary-dark-2: #0c838f;
+    /* 主色 */
+    --el-color-primary: #0fa4b3 !important;
+    /* 主色的不同亮度变化 */
+    --el-color-primary-light-1: #23aebb !important;
+    --el-color-primary-light-2: #37b8c3 !important;
+    --el-color-primary-light-3: #51bec9 !important;
+    --el-color-primary-light-4: #65c4ce !important;
+    --el-color-primary-light-5: #7fcdd5 !important;
+    --el-color-primary-light-6: #93d3d9 !important;
+    --el-color-primary-light-7: #addce1 !important;
+    --el-color-primary-light-8: #c1e2e6 !important;
+    --el-color-primary-light-9: #dbeef0 !important;
+    /* 主色的暗色变化 */
+    --el-color-primary-dark-1: #0e939f !important;
+    --el-color-primary-dark-2: #0c838f !important;
+
+    /* 按钮悬停和激活状态颜色 */
+    --el-button-hover-bg-color: var(--el-color-primary-light-3) !important;
+    --el-button-active-bg-color: var(--el-color-primary-dark-1) !important;
+
+    /* 背景色 */
     background-color: #f6f6f8;
 }
 
@@ -103,4 +117,20 @@ html.dark {
     height: 46px !important;
     line-height: 46px !important;
     padding: 0 8px !important;
+}
+
+/* 确保按钮使用主题色 */
+.el-button--primary {
+    --el-button-bg-color: var(--el-color-primary) !important;
+    --el-button-border-color: var(--el-color-primary) !important;
+    --el-button-hover-bg-color: var(--el-color-primary-light-3) !important;
+    --el-button-hover-border-color: var(--el-color-primary-light-3) !important;
+    --el-button-active-bg-color: var(--el-color-primary-dark-1) !important;
+    --el-button-active-border-color: var(--el-color-primary-dark-1) !important;
+}
+
+/* 确保链接和文字使用主题色 */
+.el-link.el-link--primary:hover,
+.el-button.is-text:not(.is-disabled):hover {
+    color: var(--el-color-primary-light-3) !important;
 }

@@ -8,6 +8,13 @@ import { compression } from 'vite-plugin-compression2'
 // https://vite.dev/config/
 // vite.config.js
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      css: {
+        charset: false
+      }
+    }
+  },
   build: {
     // 启用压缩
     minify: 'terser',
