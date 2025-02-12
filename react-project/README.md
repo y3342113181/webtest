@@ -22,18 +22,18 @@ pnpm install
 
 ```bash
 pnpm dev
-
+```
 
 3. 构建生产版本
 
-bash
+```bash
 pnpm build
-
+```
 4. 运行生产版本
 
-bash
+```bash
 pnpm preview
-
+```
 ## 特性
 
 - 🚀 基于 Vite 的快速开发体验
