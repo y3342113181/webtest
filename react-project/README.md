@@ -13,12 +13,14 @@
 ## 开始使用
 
 1. 安装依赖
-bash
+
+```bash
 pnpm install
+```
 
 2. 启动开发服务器
 
-bash
+```bash
 pnpm dev
 
 

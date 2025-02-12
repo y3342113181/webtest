@@ -26,13 +26,25 @@
 - Vue Router: v4.5.0
 ## 快速开始
 安装依赖
+
+```bash
 pnpm install
+```
 启动开发服务器
+
+```bash
 pnpm dev
+```
 构建项目
+
+```bash
 pnpm build
+```
 预览构建结果
+
+```bash
 pnpm preview
+```
 ## 项目结构
 ├── src/
 │ ├── assets/ # 静态资源
