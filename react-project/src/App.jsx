@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import { ConfigProvider } from 'antd'
+import { ConfigProvider, message } from 'antd'
 import './App.css'
 import { Provider } from 'react-redux'
 import { store } from './store'
@@ -19,6 +19,11 @@ function App() {
           },
         }}
       >
+        {message.config({
+          top: 100,
+          duration: 2,
+          maxCount: 3,
+        })}
         <Router>
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>

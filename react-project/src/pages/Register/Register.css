@@ -68,3 +68,7 @@
     width: 120px;
 }
 
+.code-input-group .ant-btn:hover{
+    background-color: var(--primary-color-hover);
+}
+
